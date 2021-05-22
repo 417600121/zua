@@ -100,6 +100,7 @@
             margin-top: 12px;
         }
     </style>
+    
 </head>
 <body>
     <div class="info">
@@ -139,12 +140,11 @@
             <a href="https://pintia.cn/auth/login" class="pta" target="_blank"><div>开始</div></a>
         </div>
     </div>
-    <script type="text/javascript" src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
-<script>
-    // 公网ip地址returnCitySN["cip"]
-    var element=document.getElementById("ip");
-    element.innerHTML='你的IP为：'+returnCitySN["cip"]+'       监考系统正在运行...';
-</script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script type="text/javascript">
+        var element=document.getElementById("ip");
+        element.innerHTML='你的IP为：'+returnCitySN["cip"]+'       监考系统正在运行...';
+    </script>
 </body>
 
 </html>
